@@ -101,24 +101,6 @@
             this.btnChoice1.Text = "Выбор 1";
             this.btnChoice1.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-=======
-            // tbEventField
-            // 
-            this.tbEventField.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.tbEventField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbEventField.ContextMenuStrip = this.cmsSaveLoad;
-            this.tbEventField.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbEventField.Location = new System.Drawing.Point(12, 45);
-            this.tbEventField.Multiline = true;
-            this.tbEventField.Name = "tbEventField";
-            this.tbEventField.Size = new System.Drawing.Size(472, 389);
-            this.tbEventField.TabIndex = 7;
-            this.tbEventField.Text = "Вы стали котом. Что вы будете делать с этим?";
-            this.tbEventField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbEventField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEventField_KeyPress);
-            // 
->>>>>>> e19e6adfa5272ba2c4347b56cd378584185db222
             // btnReturnToMain
             // 
             this.btnReturnToMain.Cursor = System.Windows.Forms.Cursors.Hand;
