@@ -17,7 +17,11 @@ namespace ArcWeek
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> e19e6adfa5272ba2c4347b56cd378584185db222
         private void btnExit_Click(object sender, EventArgs e)
         {
             string[] exitHeader = { "Ты же вернешься снова?", "Шалом", "Ты нашел секретный выход!"};
