@@ -47,3 +47,8 @@ C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug
 C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
 C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
 C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe.config
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\bin\Debug\ArcWeek.pdb
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resources
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.CoreCompileInputs.cache

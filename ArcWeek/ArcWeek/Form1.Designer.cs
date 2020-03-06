@@ -36,7 +36,7 @@
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.openFile = new System.Windows.Forms.OpenFileDialog();
+            this.loadFile = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -124,9 +124,9 @@
             this.btnLoad.Text = "Загрузочька";
             this.btnLoad.UseVisualStyleBackColor = true;
             // 
-            // openFile
+            // loadFile
             // 
-            this.openFile.FileName = "openFileDialog1";
+            this.loadFile.FileName = "openFileDialog1";
             // 
             // saveFile
             // 
@@ -165,7 +165,7 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnLoad;
-        public System.Windows.Forms.OpenFileDialog openFile;
+        public System.Windows.Forms.OpenFileDialog loadFile;
         public System.Windows.Forms.SaveFileDialog saveFile;
     }
 }

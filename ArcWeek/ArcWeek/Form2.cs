@@ -39,15 +39,11 @@ namespace ArcWeek
         }
         public void loadFunction(string fileName)
         {
-            //string loadedData = new string[]
+            string[] loadedData = new string[100];
             if (File.Exists(fileName))
             {
-                File.Create(fileName).Close();
-                //loadedData=File.ReadAllLines(fileName);
-            }
-            else
-            {
-               
+                loadedData = File.ReadAllLines(fileName);
+                MessageBox.Show(loadedData[1]);
             }
         }
 
@@ -55,7 +51,7 @@ namespace ArcWeek
         {
             dayNumber = 1;
             eventNumber = 1;
-            lblDay.Text = "День "+dayNumber;
+            lblDay.Text = "День " + dayNumber;
             lblDay.Visible = true;
         }
 
@@ -78,6 +74,16 @@ namespace ArcWeek
             if (Main.saveFile.ShowDialog() == DialogResult.OK)
             {
                 saveFunction(Main.saveFile.FileName);
+            }
+            else return;
+        }
+
+        private void cmsLoadItem_Click(object sender, EventArgs e)
+        {
+            formMain Main = new formMain();
+            if (Main.loadFile.ShowDialog() == DialogResult.OK)
+            {
+                loadFunction(Main.loadFile.FileName);
             }
             else return;
         }

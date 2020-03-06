@@ -135,7 +135,7 @@
             this.cmsSaveItem,
             this.cmsLoadItem});
             this.cmsSaveLoad.Name = "cmsSaveLoad";
-            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 56);
+            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 78);
             // 
             // cmsSaveItem
             // 
@@ -149,6 +149,7 @@
             this.cmsLoadItem.Name = "cmsLoadItem";
             this.cmsLoadItem.Size = new System.Drawing.Size(181, 26);
             this.cmsLoadItem.Text = "Загрузить";
+            this.cmsLoadItem.Click += new System.EventHandler(this.cmsLoadItem_Click);
             // 
             // formGame
             // 
