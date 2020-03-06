@@ -53,10 +53,10 @@ namespace ArcWeek
 
         private void formGame_Load(object sender, EventArgs e)
         {
-            lblDay.Text = "День "+dayNumber;
-            lblDay.Visible = true;
             dayNumber = 1;
             eventNumber = 1;
+            lblDay.Text = "День "+dayNumber;
+            lblDay.Visible = true;
         }
 
         private void tbEventField_KeyPress(object sender, KeyPressEventArgs e)

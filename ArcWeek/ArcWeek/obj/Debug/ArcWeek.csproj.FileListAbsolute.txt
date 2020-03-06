@@ -41,3 +41,9 @@ C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.res
 C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
 C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
 C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csprojAssemblyReference.cache
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formMain.resources
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formGame.resources
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
+C:\Users\creep\Documents\Windows_Forms\githoba\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
