@@ -16,7 +16,14 @@ namespace ArcWeek
         public formGame()
         {
             InitializeComponent();
-        }
+            btnChoice1.Visible = false;
+            btnChoice2.Visible = false;
+            btnChoice3.Visible = false;
+            btnChoice4.Visible = false;
+            lblDay.Visible = false;
+            btnReturnToMain.Visible = false;
+            lblEventField.Focus();
+        }          
 
         public byte dayNumber = 0;
         public int eventNumber = 0;
@@ -52,12 +59,6 @@ namespace ArcWeek
             dayNumber = 1;
             eventNumber = 1;
             lblDay.Text = "День " + dayNumber;
-            lblDay.Visible = true;
-        }
-
-        private void tbEventField_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true;
         }
 
         private void btnReturnToMain_Click(object sender, EventArgs e)
@@ -86,6 +87,19 @@ namespace ArcWeek
                 loadFunction(Main.loadFile.FileName);
             }
             else return;
+        }
+
+        private void formGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                btnChoice1.Visible = true;
+                btnChoice2.Visible = true;
+                btnChoice3.Visible = true;
+                btnChoice4.Visible = true;
+                lblDay.Visible = true;
+                btnReturnToMain.Visible = true;
+            }
         }
     }
 }

@@ -18,24 +18,6 @@ namespace ArcWeek
             InitializeComponent();
         }
 
-        public void saveFunction(string fileName)
-        {
-            formGame Game = new formGame();
-            Game.Owner = this;
-            string[,] Data = new string[2, 2];
-            Data[0, 0] = "Текущий день";
-            Data[0, 1] = Game.dayNumber.ToString();
-            Data[1, 0] = "Текущее событие";
-            Data[1, 1] = Game.eventNumber.ToString();
-            if (File.Exists(fileName))
-            {
-                File.Create(fileName);
-                for (int i=0;i<=Data.Length;i++)
-                {
-                    File.WriteAllText(fileName, Data[i, 0] + " - " + Data[i, 1]);
-                }
-            }
-        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             string[] exitHeader = { "Ты же вернешься снова?", "Шалом", "Ты нашел секретный выход!"};

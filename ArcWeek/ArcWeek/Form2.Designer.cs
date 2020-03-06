@@ -34,11 +34,11 @@
             this.btnChoice4 = new System.Windows.Forms.Button();
             this.btnChoice2 = new System.Windows.Forms.Button();
             this.btnChoice1 = new System.Windows.Forms.Button();
-            this.tbEventField = new System.Windows.Forms.TextBox();
             this.btnReturnToMain = new System.Windows.Forms.Button();
             this.cmsSaveLoad = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsSaveItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsLoadItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblEventField = new System.Windows.Forms.Label();
             this.cmsSaveLoad.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,20 +101,6 @@
             this.btnChoice1.Text = "Выбор 1";
             this.btnChoice1.UseVisualStyleBackColor = true;
             // 
-            // tbEventField
-            // 
-            this.tbEventField.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.tbEventField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbEventField.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbEventField.Location = new System.Drawing.Point(12, 45);
-            this.tbEventField.Multiline = true;
-            this.tbEventField.Name = "tbEventField";
-            this.tbEventField.Size = new System.Drawing.Size(472, 389);
-            this.tbEventField.TabIndex = 7;
-            this.tbEventField.Text = "Вы стали котом. Что вы будете делать с этим?";
-            this.tbEventField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbEventField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEventField_KeyPress);
-            // 
             // btnReturnToMain
             // 
             this.btnReturnToMain.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -135,7 +121,7 @@
             this.cmsSaveItem,
             this.cmsLoadItem});
             this.cmsSaveLoad.Name = "cmsSaveLoad";
-            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 78);
+            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 56);
             // 
             // cmsSaveItem
             // 
@@ -151,6 +137,17 @@
             this.cmsLoadItem.Text = "Загрузить";
             this.cmsLoadItem.Click += new System.EventHandler(this.cmsLoadItem_Click);
             // 
+            // lblEventField
+            // 
+            this.lblEventField.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEventField.Location = new System.Drawing.Point(8, 52);
+            this.lblEventField.Name = "lblEventField";
+            this.lblEventField.Size = new System.Drawing.Size(483, 385);
+            this.lblEventField.TabIndex = 9;
+            this.lblEventField.Text = "Вы оказались в мире, которому грозит опасность. \r\nУ вас есть 7 дней чтобы предотв" +
+    "ратить это.\r\n\r\nВсё в ваших руках.\r\n\r\n\r\nНажмите ПРОБЕЛ чтобы продолжить";
+            this.lblEventField.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // formGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,8 +156,8 @@
             this.ClientSize = new System.Drawing.Size(496, 689);
             this.ContextMenuStrip = this.cmsSaveLoad;
             this.ControlBox = false;
+            this.Controls.Add(this.lblEventField);
             this.Controls.Add(this.btnReturnToMain);
-            this.Controls.Add(this.tbEventField);
             this.Controls.Add(this.btnChoice2);
             this.Controls.Add(this.btnChoice1);
             this.Controls.Add(this.btnChoice4);
@@ -171,6 +168,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ты не должен это видеть!";
             this.Load += new System.EventHandler(this.formGame_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formGame_KeyDown);
             this.cmsSaveLoad.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -184,10 +182,10 @@
         private System.Windows.Forms.Button btnChoice4;
         private System.Windows.Forms.Button btnChoice2;
         private System.Windows.Forms.Button btnChoice1;
-        private System.Windows.Forms.TextBox tbEventField;
         private System.Windows.Forms.Button btnReturnToMain;
         private System.Windows.Forms.ContextMenuStrip cmsSaveLoad;
         private System.Windows.Forms.ToolStripMenuItem cmsSaveItem;
         private System.Windows.Forms.ToolStripMenuItem cmsLoadItem;
+        private System.Windows.Forms.Label lblEventField;
     }
 }
