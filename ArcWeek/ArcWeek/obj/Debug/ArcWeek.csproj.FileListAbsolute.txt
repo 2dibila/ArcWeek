@@ -1,0 +1,43 @@
+E:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe.config
+E:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe
+E:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.pdb
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csprojAssemblyReference.cache
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formMain.resources
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resources
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.CoreCompileInputs.cache
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
+E:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formGame.resources
+D:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe.config
+D:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe
+D:\игрушкен\ArcWeek\ArcWeek\bin\Debug\ArcWeek.pdb
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csprojAssemblyReference.cache
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formMain.resources
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formGame.resources
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resources
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.CoreCompileInputs.cache
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
+D:\игрушкен\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csprojAssemblyReference.cache
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formMain.resources
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formGame.resources
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resources
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.CoreCompileInputs.cache
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe.config
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe
+C:\Users\creep\Documents\Windows Forms\ArcWeek\ArcWeek\bin\Debug\ArcWeek.pdb
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe.config
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\bin\Debug\ArcWeek.exe
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\bin\Debug\ArcWeek.pdb
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csprojAssemblyReference.cache
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formMain.resources
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.formGame.resources
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resources
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
+C:\Users\holo\Desktop\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
