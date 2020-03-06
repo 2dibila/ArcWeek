@@ -105,6 +105,7 @@
             // 
             this.tbEventField.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tbEventField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEventField.ContextMenuStrip = this.cmsSaveLoad;
             this.tbEventField.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbEventField.Location = new System.Drawing.Point(12, 45);
             this.tbEventField.Multiline = true;
@@ -135,7 +136,7 @@
             this.cmsSaveItem,
             this.cmsLoadItem});
             this.cmsSaveLoad.Name = "cmsSaveLoad";
-            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 78);
+            this.cmsSaveLoad.Size = new System.Drawing.Size(182, 56);
             // 
             // cmsSaveItem
             // 
