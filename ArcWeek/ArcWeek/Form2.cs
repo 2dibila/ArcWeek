@@ -28,6 +28,25 @@ namespace ArcWeek
         public byte dayNumber = 0;
         public int eventNumber = 0;
 
+        protected void storyGenerate()
+        {
+            string[] storyTheme = new string[] { "Infection", "War", "Alien", "DNKCollapse", "Flood", " AIAttack" };
+            string[][] story = new string[storyTheme.Length][];
+            //0 - Infection
+            //1 - War
+            //2 - Alien
+            //3 - DNKCollapse
+            //4 - Flood
+            //5 - AIAttack
+            story[0] = new string[35];
+            story[1] = new string[35];
+            story[2] = new string[35];
+            story[3] = new string[35];
+            story[4] = new string[35];
+            story[5] = new string[35];
+            story[0][0] = "В мире появилась неизвестная инфекция. Вы должны предотвратить распространение этой инфекции всеми способами";
+        }
+
         public void saveFunction(string fileName)
         {
             string[] savedData =new string[2];
@@ -99,6 +118,7 @@ namespace ArcWeek
                 btnChoice4.Visible = true;
                 lblDay.Visible = true;
                 btnReturnToMain.Visible = true;
+                storyGenerate();
             }
         }
     }
