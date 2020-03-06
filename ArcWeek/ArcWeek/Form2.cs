@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace ArcWeek
 {
@@ -119,7 +120,16 @@ namespace ArcWeek
                 lblDay.Visible = true;
                 btnReturnToMain.Visible = true;
                 storyGenerate();
+                timer1.Stop();
+                lblPressSpace.Visible = false;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblPressSpace.Visible = false;
+            Thread.Sleep(500);
+            lblPressSpace.Visible = true;
         }
     }
 }

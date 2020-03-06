@@ -39,6 +39,8 @@
             this.cmsSaveItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsLoadItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEventField = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblPressSpace = new System.Windows.Forms.Label();
             this.cmsSaveLoad.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,8 +147,24 @@
             this.lblEventField.Size = new System.Drawing.Size(483, 385);
             this.lblEventField.TabIndex = 9;
             this.lblEventField.Text = "Вы оказались в мире, которому грозит опасность. \r\nУ вас есть 7 дней чтобы предотв" +
-    "ратить это.\r\n\r\nВсё в ваших руках.\r\n\r\n\r\nНажмите ПРОБЕЛ чтобы продолжить";
+    "ратить это.\r\n\r\nВсё в ваших руках.";
             this.lblEventField.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblPressSpace
+            // 
+            this.lblPressSpace.AutoSize = true;
+            this.lblPressSpace.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPressSpace.Location = new System.Drawing.Point(-4, 476);
+            this.lblPressSpace.Name = "lblPressSpace";
+            this.lblPressSpace.Size = new System.Drawing.Size(505, 33);
+            this.lblPressSpace.TabIndex = 10;
+            this.lblPressSpace.Text = "Нажмите ПРОБЕЛ чтобы продолжить";
             // 
             // formGame
             // 
@@ -156,6 +174,7 @@
             this.ClientSize = new System.Drawing.Size(496, 689);
             this.ContextMenuStrip = this.cmsSaveLoad;
             this.ControlBox = false;
+            this.Controls.Add(this.lblPressSpace);
             this.Controls.Add(this.lblEventField);
             this.Controls.Add(this.btnReturnToMain);
             this.Controls.Add(this.btnChoice2);
@@ -187,5 +206,7 @@
         private System.Windows.Forms.ToolStripMenuItem cmsSaveItem;
         private System.Windows.Forms.ToolStripMenuItem cmsLoadItem;
         private System.Windows.Forms.Label lblEventField;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblPressSpace;
     }
 }
