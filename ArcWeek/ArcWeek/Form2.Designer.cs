@@ -47,7 +47,9 @@
             // lblDay
             // 
             this.lblDay.AutoSize = true;
+            this.lblDay.BackColor = System.Drawing.Color.Black;
             this.lblDay.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDay.ForeColor = System.Drawing.Color.White;
             this.lblDay.Location = new System.Drawing.Point(200, 9);
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(104, 33);
@@ -57,63 +59,77 @@
             // 
             // btnChoice3
             // 
+            this.btnChoice3.BackColor = System.Drawing.Color.Black;
             this.btnChoice3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChoice3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnChoice3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoice3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChoice3.ForeColor = System.Drawing.Color.White;
             this.btnChoice3.Location = new System.Drawing.Point(12, 515);
             this.btnChoice3.Name = "btnChoice3";
             this.btnChoice3.Size = new System.Drawing.Size(234, 69);
             this.btnChoice3.TabIndex = 3;
             this.btnChoice3.Text = "Выбор 3";
-            this.btnChoice3.UseVisualStyleBackColor = true;
+            this.btnChoice3.UseVisualStyleBackColor = false;
             // 
             // btnChoice4
             // 
+            this.btnChoice4.BackColor = System.Drawing.Color.Black;
             this.btnChoice4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChoice4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnChoice4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoice4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChoice4.ForeColor = System.Drawing.Color.White;
             this.btnChoice4.Location = new System.Drawing.Point(250, 515);
             this.btnChoice4.Name = "btnChoice4";
             this.btnChoice4.Size = new System.Drawing.Size(234, 69);
             this.btnChoice4.TabIndex = 4;
             this.btnChoice4.Text = "Выбор 4";
-            this.btnChoice4.UseVisualStyleBackColor = true;
+            this.btnChoice4.UseVisualStyleBackColor = false;
             // 
             // btnChoice2
             // 
+            this.btnChoice2.BackColor = System.Drawing.Color.Black;
             this.btnChoice2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChoice2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnChoice2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoice2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChoice2.ForeColor = System.Drawing.Color.White;
             this.btnChoice2.Location = new System.Drawing.Point(250, 440);
             this.btnChoice2.Name = "btnChoice2";
             this.btnChoice2.Size = new System.Drawing.Size(234, 69);
             this.btnChoice2.TabIndex = 6;
             this.btnChoice2.Text = "Выбор 2";
-            this.btnChoice2.UseVisualStyleBackColor = true;
+            this.btnChoice2.UseVisualStyleBackColor = false;
             // 
             // btnChoice1
             // 
+            this.btnChoice1.BackColor = System.Drawing.Color.Black;
             this.btnChoice1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChoice1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnChoice1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoice1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChoice1.ForeColor = System.Drawing.Color.White;
             this.btnChoice1.Location = new System.Drawing.Point(12, 440);
             this.btnChoice1.Name = "btnChoice1";
             this.btnChoice1.Size = new System.Drawing.Size(234, 69);
             this.btnChoice1.TabIndex = 5;
             this.btnChoice1.Text = "Выбор 1";
-            this.btnChoice1.UseVisualStyleBackColor = true;
+            this.btnChoice1.UseVisualStyleBackColor = false;
             // 
             // btnReturnToMain
             // 
+            this.btnReturnToMain.BackColor = System.Drawing.Color.Black;
             this.btnReturnToMain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReturnToMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturnToMain.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnReturnToMain.ForeColor = System.Drawing.Color.White;
             this.btnReturnToMain.Location = new System.Drawing.Point(131, 630);
             this.btnReturnToMain.Name = "btnReturnToMain";
             this.btnReturnToMain.Size = new System.Drawing.Size(234, 47);
             this.btnReturnToMain.TabIndex = 8;
             this.btnReturnToMain.Text = "В главное меню";
-            this.btnReturnToMain.UseVisualStyleBackColor = true;
+            this.btnReturnToMain.UseVisualStyleBackColor = false;
             this.btnReturnToMain.Click += new System.EventHandler(this.btnReturnToMain_Click);
             // 
             // cmsSaveLoad
@@ -141,8 +157,10 @@
             // 
             // lblEventField
             // 
+            this.lblEventField.BackColor = System.Drawing.Color.Black;
             this.lblEventField.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblEventField.Location = new System.Drawing.Point(8, 52);
+            this.lblEventField.ForeColor = System.Drawing.Color.White;
+            this.lblEventField.Location = new System.Drawing.Point(6, 52);
             this.lblEventField.Name = "lblEventField";
             this.lblEventField.Size = new System.Drawing.Size(483, 385);
             this.lblEventField.TabIndex = 9;
@@ -159,8 +177,10 @@
             // lblPressSpace
             // 
             this.lblPressSpace.AutoSize = true;
+            this.lblPressSpace.BackColor = System.Drawing.Color.Black;
             this.lblPressSpace.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblPressSpace.Location = new System.Drawing.Point(-4, 476);
+            this.lblPressSpace.ForeColor = System.Drawing.Color.White;
+            this.lblPressSpace.Location = new System.Drawing.Point(-5, 492);
             this.lblPressSpace.Name = "lblPressSpace";
             this.lblPressSpace.Size = new System.Drawing.Size(505, 33);
             this.lblPressSpace.TabIndex = 10;
@@ -170,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(496, 689);
             this.ContextMenuStrip = this.cmsSaveLoad;
             this.ControlBox = false;
@@ -184,10 +204,12 @@
             this.Controls.Add(this.lblDay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formGame";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ты не должен это видеть!";
             this.Load += new System.EventHandler(this.formGame_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formGame_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formGame_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formGame_MouseMove);
             this.cmsSaveLoad.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,17 +218,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblDay;
-        private System.Windows.Forms.Button btnChoice3;
-        private System.Windows.Forms.Button btnChoice4;
-        private System.Windows.Forms.Button btnChoice2;
-        private System.Windows.Forms.Button btnChoice1;
-        private System.Windows.Forms.Button btnReturnToMain;
-        private System.Windows.Forms.ContextMenuStrip cmsSaveLoad;
-        private System.Windows.Forms.ToolStripMenuItem cmsSaveItem;
-        private System.Windows.Forms.ToolStripMenuItem cmsLoadItem;
-        private System.Windows.Forms.Label lblEventField;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label lblPressSpace;
+        public System.Windows.Forms.Label lblDay;
+        public System.Windows.Forms.Button btnChoice3;
+        public System.Windows.Forms.Button btnChoice4;
+        public System.Windows.Forms.Button btnChoice2;
+        public System.Windows.Forms.Button btnChoice1;
+        public System.Windows.Forms.Button btnReturnToMain;
+        public System.Windows.Forms.ContextMenuStrip cmsSaveLoad;
+        public System.Windows.Forms.ToolStripMenuItem cmsSaveItem;
+        public System.Windows.Forms.ToolStripMenuItem cmsLoadItem;
+        public System.Windows.Forms.Label lblEventField;
+        public System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label lblPressSpace;
     }
 }

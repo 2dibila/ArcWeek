@@ -18,6 +18,9 @@ namespace ArcWeek
             InitializeComponent();
         }
 
+        public int xpos, ypos;
+        public Point lastPointMain;
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             string[] exitHeader = { "Ты же вернешься снова?", "Шалом", "Ты нашел секретный выход!"};
@@ -37,15 +40,65 @@ namespace ArcWeek
         private void btnStartGame_Click(object sender, EventArgs e)
         {
             formGame Game = new formGame();
-            Game.Show();
             formMain Main = this;
+            Game.Owner = this;
             Main.Hide();
+            Game.ShowDialog();
+            Main.Dispose();
             pbProgress.Image.Dispose();
         }
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
             btnStartGame_Click(sender, e);
+        }
+
+        private void formMain_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPointMain.X;
+                this.Top += e.Y - lastPointMain.Y;
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            formGame Game = new formGame();
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                Game.saveFunction(saveFile.FileName);
+            }
+            else return;
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            formGame Game = new formGame();
+            if (loadFile.ShowDialog() == DialogResult.OK)
+            {
+                Game.loadFunction(loadFile.FileName);
+                Game.btnChoice1.Visible = true;
+                Game.btnChoice2.Visible = true;
+                Game.btnChoice3.Visible = true;
+                Game.btnChoice4.Visible = true;
+                Game.lblDay.Visible = true;
+                Game.btnReturnToMain.Visible = true;
+                Game.timer1.Stop();
+                Game.lblPressSpace.Visible = false;
+                btnStartGame_Click(sender, e);
+                
+            }
+            else return;
+        }
+
+        private void formMain_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void formMain_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPointMain = new Point(e.X, e.Y);
         }
     }
 }
