@@ -176,6 +176,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Как ты это увидел?";
             this.Load += new System.EventHandler(this.formMain_Load);
+            this.Shown += new System.EventHandler(this.formMain_Shown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formMain_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formMain_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pbProgress)).EndInit();

@@ -65,19 +65,12 @@ namespace ArcWeek
         private void btnSave_Click(object sender, EventArgs e)
         {
             formGame Game = new formGame();
-            if (saveFile.ShowDialog() == DialogResult.OK)
-            {
-                Game.saveFunction(saveFile.FileName);
-            }
-            else return;
+            Game.saveFunction();
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            formGame Game = new formGame();
-            if (loadFile.ShowDialog() == DialogResult.OK)
-            {
-                Game.loadFunction(loadFile.FileName);
+            formGame Game = new formGame();Game.loadFunction();
                 Game.btnChoice1.Visible = true;
                 Game.btnChoice2.Visible = true;
                 Game.btnChoice3.Visible = true;
@@ -92,13 +85,15 @@ namespace ArcWeek
                 Game.ShowDialog();
                 Main.Dispose();
                 pbProgress.Image.Dispose();
-
-            }
-            else return;
         }
 
         private void formMain_Load(object sender, EventArgs e)
         {
+        }
+
+        private void formMain_Shown(object sender, EventArgs e)
+        {
+            new System.Media.SoundPlayer("95 moves.wav").PlayLooping();
         }
 
         private void formMain_MouseDown(object sender, MouseEventArgs e)

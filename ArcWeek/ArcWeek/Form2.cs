@@ -126,7 +126,7 @@ namespace ArcWeek
         }
 
 
-        public void saveFunction(string fileName)
+        public void saveFunction()
         {
             string[] savedData = new string[100];
 
@@ -135,28 +135,28 @@ namespace ArcWeek
             savedData[2] = currentQuestion;
             savedData[3] = storyNumber.ToString();
 
-            if (!File.Exists(fileName))
+            if (!File.Exists("data.txt"))
             {
-                File.Create(fileName).Close();
-                File.WriteAllLines(fileName, savedData);
+                File.Create("data.txt").Close();
+                File.WriteAllLines("data.txt", savedData);
             }
             else
             {
-                File.Delete(fileName);
-                File.Create(fileName).Close();
-                File.WriteAllLines(fileName, savedData);
+                File.Delete("data.txt");
+                File.Create("data.txt").Close();
+                File.WriteAllLines("data.txt", savedData);
             }
         }
 
         
 
-        public void loadFunction(string fileName)
+        public void loadFunction()
         {
             stories();
 
-            if (File.Exists(fileName))
+            if (File.Exists("data.txt"))
             {
-                loadedData = File.ReadAllLines(fileName);
+                loadedData = File.ReadAllLines("data.txt");
                 MessageBox.Show(loadedData[1],loadedData[0]);
             }
             currentDay = loadedData[0];
@@ -193,22 +193,12 @@ namespace ArcWeek
 
         private void cmsSaveItem_Click(object sender, EventArgs e)
         {
-            formMain Main = new formMain();
-            if (Main.saveFile.ShowDialog() == DialogResult.OK)
-            {
-                saveFunction(Main.saveFile.FileName);
-            }
-            else return;
+            saveFunction();
         }
 
         private void cmsLoadItem_Click(object sender, EventArgs e)
         {
-            formMain Main = new formMain();
-            if (Main.loadFile.ShowDialog() == DialogResult.OK)
-            {
-                loadFunction(Main.loadFile.FileName);
-            }
-            else return;
+            loadFunction();
         }
 
         private void formGame_KeyDown(object sender, KeyEventArgs e)
