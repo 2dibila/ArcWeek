@@ -93,7 +93,7 @@ namespace ArcWeek
 
         private void formMain_Shown(object sender, EventArgs e)
         {
-            new System.Media.SoundPlayer("95 moves.wav").PlayLooping();
+            new System.Media.SoundPlayer("music.wav").PlayLooping();
         }
 
         private void formMain_MouseDown(object sender, MouseEventArgs e)
