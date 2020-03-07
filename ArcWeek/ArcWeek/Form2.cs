@@ -36,7 +36,7 @@ namespace ArcWeek
             formMain MainForm = Owner as formMain;
         }
 
-        int storyNumber = rand.Next(0, 5);
+        int storyNumber;
 
         public string currentQuestion;
         public string currentDay;
@@ -73,6 +73,7 @@ namespace ArcWeek
 
         protected void storyGenerate()
         {
+            storyNumber = rand.Next(0, 5);
             stories();
             currentQuestion = story[storyNumber][0];
             lblEventField.Text = currentQuestion;
@@ -132,6 +133,7 @@ namespace ArcWeek
             savedData[0] = "День " + dayNumber.ToString();
             savedData[1] = "Текущая история - " + storyTheme[storyNumber];
             savedData[2] = currentQuestion;
+            savedData[3] = storyNumber.ToString();
 
             if (!File.Exists(fileName))
             {
@@ -159,6 +161,7 @@ namespace ArcWeek
             }
             currentDay = loadedData[0];
             currentQuestion = loadedData[2];
+            storyNumber = Convert.ToInt32(loadedData[3]);
 
             lblDay.Text = currentDay;
             lblEventField.Text = currentQuestion;

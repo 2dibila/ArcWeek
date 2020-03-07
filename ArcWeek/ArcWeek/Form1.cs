@@ -86,8 +86,13 @@ namespace ArcWeek
                 Game.btnReturnToMain.Visible = true;
                 Game.timer1.Stop();
                 Game.lblPressSpace.Visible = false;
-                btnStartGame_Click(sender, e);
-                
+                formMain Main = this;
+                Game.Owner = this;
+                Main.Hide();
+                Game.ShowDialog();
+                Main.Dispose();
+                pbProgress.Image.Dispose();
+
             }
             else return;
         }
