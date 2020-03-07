@@ -19,8 +19,11 @@ namespace ArcWeek
 
         public byte dayNumber = 0;
         public int eventNumber = 0;
+
         public static string[] storyTheme = new string[] 
-        { "Инфекция", "Война", "Нашествие", "Коллапс ДНК", "Наводнение", "Искуственный интеллект" };
+
+        { "Инфекция", "Война", "Нашествие", "Наводнение", "Искуственный интеллект" };
+
         string[][] story = new string[storyTheme.Length][];
 
         public formGame()
@@ -56,32 +59,68 @@ namespace ArcWeek
             story[2] = new string[35];
             story[3] = new string[35];
             story[4] = new string[35];
-            story[5] = new string[35];
             story[0][0] =
-                "В мире появилась неизвестная инфекция. Что вы сделаете в 1 очередь?";
+                "В мире появилась неизвестная инфекция. Вы работаете врачом. Что вы сделаете в 1 очередь?";
             story[1][0] =
                 "Мир накануне войны. Что вы сделаете в 1 очередь?";
             story[2][0] =
-                "Мир был атакован инопланетянами. Что вы сделаете в 1 очередь?";
+                "Мир был атакован инопланетянами. Вы обычный чел. Что вы сделаете в 1 очередь?";
             story[3][0] =
-                "У нового поколения человека обнаружены необратимые изменения в ДНК. Что вы сделаете чтобы спасти человечество?";
-            story[4][0] =
                 "Скоро мир будет затоплен. Что вы сделаете в 1 очередь?";
-            story[5][0] =
+            story[4][0] =
                 "Исскуственный интеллект начал появляться повсюду, люди считают, что они планируют атаковать человечество. Что вы сделаете в 1 очередь?";
         }
 
         protected void storyGenerate()
         {
-            storyNumber = rand.Next(0, 5);
+            storyNumber = rand.Next(0, 4);
             stories();
             currentQuestion = story[storyNumber][0];
             lblEventField.Text = currentQuestion;
             firstAnswerGenerate();
         }
 
+        public void questionsInfection()
+        {
+            story[0][1] = "Вашу больницу заполнили больные этим вирусом, что вы будете делать?";
+            story[0][2] = "Люди спокойны, но врачи уже не справляются.";
+            story[0][3] = "";
+            story[0][4] = "";
+            story[0][5] = "";
+            story[0][6] = "";
+            story[0][7] = "";
+            story[0][8] = "";
+            story[0][9] = "";
+            story[0][10] = "";
+            story[0][11] = "";
+            story[0][12] = "";
+            story[0][13] = "";
+            story[0][14] = "";
+            story[0][15] = "";
+            story[0][16] = "";
+            story[0][17] = "";
+            story[0][18] = "";
+            story[0][19] = "";
+            story[0][20] = "";
+            story[0][21] = "";
+            story[0][22] = "";
+            story[0][23] = "";
+            story[0][24] = "";
+            story[0][25] = "";
+            story[0][26] = "";
+            story[0][27] = "";
+            story[0][28] = "";
+            story[0][29] = "";
+            story[0][30] = "";
+            story[0][31] = "";
+            story[0][32] = "";
+            story[0][33] = "";
+            story[0][34] = "";
+        }
+
         protected void firstAnswerGenerate()
         {
+
             dayNumber = 1;
 
             switch (storyNumber)
@@ -105,18 +144,12 @@ namespace ArcWeek
                     btnChoice4.Text = "Сдамся";
                     break;
                 case 3:
-                    btnChoice1.Text = "ПОКА ХЗ";
-                    btnChoice2.Text = "ПОКА ХЗ";
-                    btnChoice3.Text = "ПОКА ХЗ";
-                    btnChoice4.Text = "ПОКА ХЗ";
-                    break;
-                case 4:
                     btnChoice1.Text = "Построю корабль";
                     btnChoice2.Text = "Пойду в горы";
                     btnChoice3.Text = "Найду подводный мир";
                     btnChoice4.Text = "Смирюсь";
                     break;
-                case 5:
+                case 4:
                     btnChoice1.Text = "Ничего, считаю, что все хорошо";
                     btnChoice2.Text = "Выброшу всю технику";
                     btnChoice3.Text = "Выключу всех роботов";
@@ -170,8 +203,8 @@ namespace ArcWeek
                 (currentQuestion == story[1][0]) ||
                 (currentQuestion == story[2][0]) ||
                 (currentQuestion == story[3][0]) ||
-                (currentQuestion == story[4][0]) ||
-                (currentQuestion == story[5][0]))
+                (currentQuestion == story[4][0]))
+                
             {
                 firstAnswerGenerate();
             }
@@ -239,5 +272,47 @@ namespace ArcWeek
         {
             lastPointGame = new Point(e.X, e.Y);
         }
+
+        private void btnChoice1_Click(object sender, EventArgs e)
+        {
+            switch (storyTheme[storyNumber])
+            {
+                case "Инфекция":
+
+                    questionsInfection();
+                    if (currentQuestion == story[0][0]) 
+                    {
+                        currentQuestion = story[0][1];
+                        lblEventField.Text = currentQuestion;
+                        btnChoice1.Text = "Не допущу паники";
+                        btnChoice2.Text = "Вызову подмогу";
+                        btnChoice3.Text = "Вам здесь не рады";
+                        btnChoice4.Text = "Сбегу";
+                    }
+                   else if(currentQuestion == story[0][1])
+                    {
+                        currentQuestion = story[0][2];
+                        lblEventField.Text = currentQuestion;
+                        btnChoice1.Text = "Дать врачам отдохнуть";
+                        btnChoice2.Text = "Заставить работать";
+                        btnChoice3.Enabled = false;
+                        btnChoice4.Enabled = false;
+                    }
+                    break;
+                case "Война":
+
+                    break;
+                case "Нашествие":
+
+                    break;
+                case "Наводнение":
+
+                    break;
+                case "Искуственный интеллект":
+
+                    break;
+            }
+        }
+
     }
 }

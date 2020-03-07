@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
 
 namespace ArcWeek
 {
@@ -93,7 +94,9 @@ namespace ArcWeek
 
         private void formMain_Shown(object sender, EventArgs e)
         {
-            new System.Media.SoundPlayer("music.wav").PlayLooping();
+          //SoundPlayer soundPlayer = new SoundPlayer("music.wav");
+          // soundPlayer.PlayLooping();
+          // soundPlayer
         }
 
         private void formMain_MouseDown(object sender, MouseEventArgs e)

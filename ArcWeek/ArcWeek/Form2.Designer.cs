@@ -116,6 +116,7 @@
             this.btnChoice1.TabIndex = 5;
             this.btnChoice1.Text = "Выбор 1";
             this.btnChoice1.UseVisualStyleBackColor = false;
+            this.btnChoice1.Click += new System.EventHandler(this.btnChoice1_Click);
             // 
             // btnReturnToMain
             // 
