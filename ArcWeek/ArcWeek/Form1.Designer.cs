@@ -33,23 +33,23 @@
             this.btnStartGame = new System.Windows.Forms.Button();
             this.btn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pbProgress = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.loadFile = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProgress)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMainText
             // 
             this.lblMainText.AutoSize = true;
             this.lblMainText.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblMainText.Location = new System.Drawing.Point(60, 9);
+            this.lblMainText.Location = new System.Drawing.Point(114, 9);
             this.lblMainText.Name = "lblMainText";
-            this.lblMainText.Size = new System.Drawing.Size(387, 33);
+            this.lblMainText.Size = new System.Drawing.Size(271, 33);
             this.lblMainText.TabIndex = 0;
-            this.lblMainText.Text = "Проживи неделю достойно";
+            this.lblMainText.Text = "Неделя катастроф";
             this.lblMainText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnStartGame
@@ -90,15 +90,15 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pbLogo
+            // pbProgress
             // 
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(124, 109);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(256, 256);
-            this.pbLogo.TabIndex = 6;
-            this.pbLogo.TabStop = false;
-            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            this.pbProgress.Image = ((System.Drawing.Image)(resources.GetObject("pbProgress.Image")));
+            this.pbProgress.Location = new System.Drawing.Point(120, 120);
+            this.pbProgress.Name = "pbProgress";
+            this.pbProgress.Size = new System.Drawing.Size(256, 256);
+            this.pbProgress.TabIndex = 6;
+            this.pbProgress.TabStop = false;
+            this.pbProgress.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // btnSave
             // 
@@ -141,7 +141,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.pbLogo);
+            this.Controls.Add(this.pbProgress);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnStartGame);
@@ -150,7 +150,7 @@
             this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Как ты это увидел?";
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProgress)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,7 +162,7 @@
         private System.Windows.Forms.Button btnStartGame;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.PictureBox pbProgress;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnLoad;
         public System.Windows.Forms.OpenFileDialog loadFile;

@@ -40,7 +40,7 @@ namespace ArcWeek
             Game.Show();
             formMain Main = this;
             Main.Hide();
-            pbLogo.Image.Dispose();
+            pbProgress.Image.Dispose();
         }
 
         private void pbLogo_Click(object sender, EventArgs e)

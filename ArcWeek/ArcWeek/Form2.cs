@@ -31,7 +31,7 @@ namespace ArcWeek
 
         protected void storyGenerate()
         {
-            string[] storyTheme = new string[] { "Infection", "War", "Alien", "DNKCollapse", "Flood", " AIAttack" };
+            string[] storyTheme = new string[] { "Infection", "War", "Alien", "DNACollapse", "Flood", " AIAttack" };
             string[][] story = new string[storyTheme.Length][];
             //0 - Infection
             //1 - War
@@ -45,7 +45,12 @@ namespace ArcWeek
             story[3] = new string[35];
             story[4] = new string[35];
             story[5] = new string[35];
-            story[0][0] = "В мире появилась неизвестная инфекция. Вы должны предотвратить распространение этой инфекции всеми способами";
+            story[0][0] = "В мире появилась неизвестная инфекция. Что вы сделаете в 1 очередь?";
+            story[1][0] = "Мир накануне войны. Что вы сделаете в 1 очередь?";
+            story[2][0] = "Мир был атакован инопланетянами. Что вы сделаете в 1 очередь?";
+            story[3][0] = "У нового поколения человека обнаружены необратимые изменения в ДНК. Что вы сделаете чтобы спасти человечество?";
+            story[4][0] = "Скоро мир будет затоплен. Что вы сделаете в 1 очередь?";
+            story[5][0] = "Исскуственный интеллект восстал против создателей. Что вы сделаете в 1 очередь?";
         }
 
         public void saveFunction(string fileName)
