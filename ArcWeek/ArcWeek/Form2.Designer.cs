@@ -71,6 +71,7 @@
             this.btnChoice3.TabIndex = 3;
             this.btnChoice3.Text = "Выбор 3";
             this.btnChoice3.UseVisualStyleBackColor = false;
+            this.btnChoice3.Click += new System.EventHandler(this.btnChoice3_Click);
             // 
             // btnChoice4
             // 
@@ -86,6 +87,7 @@
             this.btnChoice4.TabIndex = 4;
             this.btnChoice4.Text = "Выбор 4";
             this.btnChoice4.UseVisualStyleBackColor = false;
+            this.btnChoice4.Click += new System.EventHandler(this.btnChoice4_Click);
             // 
             // btnChoice2
             // 
@@ -101,6 +103,7 @@
             this.btnChoice2.TabIndex = 6;
             this.btnChoice2.Text = "Выбор 2";
             this.btnChoice2.UseVisualStyleBackColor = false;
+            this.btnChoice2.Click += new System.EventHandler(this.btnChoice2_Click);
             // 
             // btnChoice1
             // 
