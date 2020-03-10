@@ -21,12 +21,6 @@ namespace ArcWeek
         public int eventNumber = 0;
         public string endOfGame = "\n\n\nКонец игры.\n\n\n Создатели :\nArcKontyR\nholo";
 
-        public static string[] storyTheme = new string[]
-
-        { "Инфекция", "Война", "Нашествие", "Наводнение", "Искуственный интеллект" };
-
-        string[][] story = new string[storyTheme.Length][];
-
         public formGame()
         {
             InitializeComponent();
@@ -53,7 +47,6 @@ namespace ArcWeek
 
             savedData[0] = "День " + dayNumber.ToString();
             savedData[1] = currentQuestion;
-            savedData[2] = storyNumber.ToString();
 
             if (!File.Exists("data.txt"))
             {
