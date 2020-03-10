@@ -30,7 +30,7 @@ namespace ArcWeek
             Random rndHeader = new Random();
             string Text = exitText[rndText.Next(0, exitText.Length)]; 
             string Header = exitHeader[rndHeader.Next(0, exitHeader.Length)];
-            DialogResult result = MessageBox.Show("Вы точно хотите покинуть приключеньице?", Header, MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            DialogResult result = MessageBox.Show(Text, Header, MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
@@ -46,7 +46,7 @@ namespace ArcWeek
             Main.Hide();
             Game.ShowDialog();
             Main.Dispose();
-            pbProgress.Image.Dispose();
+            pbLogo.Image.Dispose();
         }
 
         private void pbLogo_Click(object sender, EventArgs e)
@@ -71,7 +71,8 @@ namespace ArcWeek
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            formGame Game = new formGame();Game.loadFunction();
+            formGame Game = new formGame();
+                Game.loadFunction();
                 Game.btnChoice1.Visible = true;
                 Game.btnChoice2.Visible = true;
                 Game.btnChoice3.Visible = true;
@@ -85,7 +86,7 @@ namespace ArcWeek
                 Main.Hide();
                 Game.ShowDialog();
                 Main.Dispose();
-                pbProgress.Image.Dispose();
+                pbLogo.Image.Dispose();
         }
 
         private void formMain_Load(object sender, EventArgs e)
@@ -94,9 +95,8 @@ namespace ArcWeek
 
         private void formMain_Shown(object sender, EventArgs e)
         {
-          //SoundPlayer soundPlayer = new SoundPlayer("music.wav");
-          // soundPlayer.PlayLooping();
-          // soundPlayer
+            //SoundPlayer soundPlayer = new SoundPlayer("Peace.wav");
+            //soundPlayer.PlayLooping();
         }
 
         private void formMain_MouseDown(object sender, MouseEventArgs e)

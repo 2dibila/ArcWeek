@@ -33,12 +33,11 @@
             this.btnStartGame = new System.Windows.Forms.Button();
             this.btn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pbProgress = new System.Windows.Forms.PictureBox();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnLoad = new System.Windows.Forms.Button();
             this.loadFile = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProgress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMainText
@@ -47,11 +46,11 @@
             this.lblMainText.BackColor = System.Drawing.Color.Black;
             this.lblMainText.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMainText.ForeColor = System.Drawing.Color.White;
-            this.lblMainText.Location = new System.Drawing.Point(114, 9);
+            this.lblMainText.Location = new System.Drawing.Point(131, 9);
             this.lblMainText.Name = "lblMainText";
-            this.lblMainText.Size = new System.Drawing.Size(271, 33);
+            this.lblMainText.Size = new System.Drawing.Size(245, 33);
             this.lblMainText.TabIndex = 0;
-            this.lblMainText.Text = "Неделя катастроф";
+            this.lblMainText.Text = "Неделя обучения";
             this.lblMainText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnStartGame
@@ -67,7 +66,7 @@
             this.btnStartGame.Name = "btnStartGame";
             this.btnStartGame.Size = new System.Drawing.Size(472, 69);
             this.btnStartGame.TabIndex = 1;
-            this.btnStartGame.Text = "Начать приключеньице";
+            this.btnStartGame.Text = "Начать обучение";
             this.btnStartGame.UseVisualStyleBackColor = false;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
@@ -84,7 +83,7 @@
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(234, 69);
             this.btn.TabIndex = 2;
-            this.btn.Text = "Концовочьки";
+            this.btn.Text = "Концовки";
             this.btn.UseVisualStyleBackColor = false;
             // 
             // btnExit
@@ -100,37 +99,20 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(472, 69);
             this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "Выходик";
+            this.btnExit.Text = "Выключить";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pbProgress
+            // pbLogo
             // 
-            this.pbProgress.BackColor = System.Drawing.Color.Black;
-            this.pbProgress.Image = ((System.Drawing.Image)(resources.GetObject("pbProgress.Image")));
-            this.pbProgress.Location = new System.Drawing.Point(120, 120);
-            this.pbProgress.Name = "pbProgress";
-            this.pbProgress.Size = new System.Drawing.Size(256, 256);
-            this.pbProgress.TabIndex = 6;
-            this.pbProgress.TabStop = false;
-            this.pbProgress.Click += new System.EventHandler(this.pbLogo_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Black;
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(250, 534);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(234, 33);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Сохраненьице";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.pbLogo.BackColor = System.Drawing.Color.Black;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(120, 120);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(256, 256);
+            this.pbLogo.TabIndex = 6;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // btnLoad
             // 
@@ -141,11 +123,11 @@
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnLoad.ForeColor = System.Drawing.Color.White;
-            this.btnLoad.Location = new System.Drawing.Point(250, 570);
+            this.btnLoad.Location = new System.Drawing.Point(250, 534);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(234, 33);
+            this.btnLoad.Size = new System.Drawing.Size(234, 69);
             this.btnLoad.TabIndex = 7;
-            this.btnLoad.Text = "Загрузочька";
+            this.btnLoad.Text = "Загрузить";
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
@@ -165,8 +147,7 @@
             this.ClientSize = new System.Drawing.Size(496, 689);
             this.ControlBox = false;
             this.Controls.Add(this.btnLoad);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.pbProgress);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnStartGame);
@@ -179,7 +160,7 @@
             this.Shown += new System.EventHandler(this.formMain_Shown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formMain_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formMain_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.pbProgress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,8 +172,7 @@
         private System.Windows.Forms.Button btnStartGame;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox pbProgress;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Button btnLoad;
         public System.Windows.Forms.OpenFileDialog loadFile;
         public System.Windows.Forms.SaveFileDialog saveFile;
