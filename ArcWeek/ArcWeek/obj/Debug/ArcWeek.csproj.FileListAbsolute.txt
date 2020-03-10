@@ -62,4 +62,3 @@ D:\GameWeek\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.Properties.Resources.resou
 D:\GameWeek\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.GenerateResource.cache
 D:\GameWeek\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.exe
 D:\GameWeek\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.pdb
-D:\GameWeek\ArcWeek\ArcWeek\ArcWeek\obj\Debug\ArcWeek.csproj.CoreCompileInputs.cache
