@@ -18,6 +18,7 @@ namespace GraphicRedactor
         Point point;
         Point PreviousPoint;
         bool textWriting = false;
+        int penWidth = 1;
 
         public GraphRed()
         {
@@ -110,7 +111,7 @@ namespace GraphicRedactor
             PreviousPoint = point;
             point = e.Location;
 
-            Pen Pen = new Pen(currentColor, 1);
+            Pen Pen = new Pen(currentColor, penWidth);
 
             // Рисовать так: 
             Graphics g = Graphics.FromImage(pictureBox1.Image);
@@ -144,20 +145,41 @@ namespace GraphicRedactor
             f2.ShowDialog();
         }
 
-        private void выборЦветаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-             if (colorDialog1.ShowDialog() == DialogResult.OK)
-             {
-                currentColor = colorDialog1.Color;
-             }    
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics g = Graphics.FromImage(pictureBox1.Image);
-            g.Clear(Color.White);
+            //g.Clear(Color.White);
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             g.DrawString(textBox1.Text, new Font("Cambria", 48), Brushes.Black, new PointF(0, 0));
+        }
+
+        private void выборЦветаToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                currentColor = colorDialog1.Color;
+            }
+        }
+
+        private void размерToolStripMenuItem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((number<=47 || number>=58) && number!=8 && number!=44)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void размерToolStripMenuItem_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                penWidth = Convert.ToInt32(размерToolStripMenuItem.Text);
+            }
+            catch
+            {
+                penWidth = 1;
+            }
         }
     }
 }
